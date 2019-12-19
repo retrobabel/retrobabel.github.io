@@ -14,24 +14,25 @@
 	  
 <script type="text/javascript" src="//tags.bkrtx.com/js/bk-coretag.js"> </script> 
 <script type='text/javascript'>
-	if (typeof addEventListener != "undefined")
+if (typeof addEventListener != "undefined")
+{
+	var element = document.getElementById("ext_link");
+	element.addEventListener('click', function()
 	{
-		var element = document.getElementById("ext_link");
-		element.addEventListener('click', function ()
-		{
-			bk_addPageCtx('eventType', 'exit_click'); //describe the click event
-			bk_doJSTag( 66360 , 0);
-		}, false);
-	}
+		bk_addPageCtx('eventType', 'exit_click'); //describe the click event
+		bk_doJSTag(66360, 0);
+	}, false);
+}
 else
 {
 	var element = document.getElementById("ext_link");
-	element.attachEvent('onclick', function ()
+	element.attachEvent('onclick', function()
 	{ //event handler for I.E.
 		bk_addPageCtx('eventType', 'exit_click'); //describe the click event
-			bk_doJSTag( 66360 , 0);
+		bk_doJSTag(66361, 0);
 	});
-} </script>
+} 
+</script>
 
 
   </body>
