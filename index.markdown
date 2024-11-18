@@ -4,3 +4,4 @@
 
 layout: home
 ---
+<a rel="me" href="https://c.im/@mimic">Mastodon</a>
